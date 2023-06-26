@@ -1,0 +1,22 @@
+[build-system]
+build-backend = "cmeel.build"
+requires = ["cmeel[build]"]
+
+[project]
+description = "cmeel distribution for OpenBLAS"
+license = "BSD-3-Clause"
+name = "cmeel-openblas"
+requires-python = ">= 3.8"
+version = "0.3.23"
+
+[project.urls]
+homepage = "https://github.com/cmake-wheel/cmeel-openblas"
+repository = "https://github.com/cmake-wheel/cmeel-openblas.git"
+
+[tool.cmeel]
+configure-args = ["-DBUILD_SHARED_LIBS=ON"]
+py3-none = true
+source = "OpenBLAS"
+
+[tool.tomlsort]
+all = true
