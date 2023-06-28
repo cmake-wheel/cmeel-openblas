@@ -14,6 +14,7 @@ homepage = "https://github.com/cmake-wheel/cmeel-openblas"
 repository = "https://github.com/cmake-wheel/cmeel-openblas.git"
 
 [tool.cmeel]
+build-number = 1
 configure-args = ["-DBUILD_SHARED_LIBS=ON"]
 py3-none = true
 source = "OpenBLAS"
