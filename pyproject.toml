@@ -7,14 +7,13 @@ description = "cmeel distribution for OpenBLAS"
 license = "BSD-3-Clause"
 name = "cmeel-openblas"
 requires-python = ">= 3.8"
-version = "0.3.23"
+version = "0.3.25"
 
 [project.urls]
 homepage = "https://github.com/cmake-wheel/cmeel-openblas"
 repository = "https://github.com/cmake-wheel/cmeel-openblas.git"
 
 [tool.cmeel]
-build-number = 1
 configure-args = ["-DBUILD_SHARED_LIBS=ON"]
 has-sitelib = false
 source = "OpenBLAS"
