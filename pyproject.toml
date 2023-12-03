@@ -12,6 +12,7 @@ version = "0.3.25"
 [project.urls]
 homepage = "https://github.com/cmake-wheel/cmeel-openblas"
 repository = "https://github.com/cmake-wheel/cmeel-openblas.git"
+upstream = "http://www.openblas.net"
 
 [tool.cmeel]
 configure-args = ["-DBUILD_SHARED_LIBS=ON"]
