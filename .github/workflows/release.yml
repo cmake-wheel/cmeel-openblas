@@ -35,6 +35,11 @@ jobs:
           platforms: all
       - run: pipx install cmeel
       - run: cmeel docker -Ui "quay.io/pypa/${{ matrix.image }}_${{ matrix.arch }}"
+        if: matrix.arch != 'aarch64'
+      - run: cmeel docker -Ui "quay.io/pypa/${{ matrix.image }}_${{ matrix.arch }}"
+        if: matrix.arch == 'aarch64'
+        env:
+          CMEEL_CMAKE_ARGS: "-DTARGET=ARMV8"
       - uses: actions/upload-artifact@v3
         with:
           path: wh
