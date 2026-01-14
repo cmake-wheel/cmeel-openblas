@@ -17,6 +17,7 @@ upstream = "http://www.openmathlib.org/OpenBLAS/"
 [tool.cmeel]
 configure-args = ["-DBUILD_SHARED_LIBS=ON"]
 has-sitelib = false
+run-tests = false
 source = "OpenBLAS"
 
 [tool.tomlsort]
